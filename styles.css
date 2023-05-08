@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Rajdhani';
+    src: url(Rajdhani-Medium.ttf);
+}
+@font-face {
+    font-family: 'SpaceGrotesk-Bold';
+    src: url(SpaceGrotesk-Bold.ttf);
+}
+@font-face {
+    font-family: 'SpaceGrotesk-Regular';
+    src: url(SpaceGrotesk-Regular.ttf);
+}
+@font-face {
+    font-family: 'SpaceGrotesk-VariableFont_wght';
+    src: url(SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+html{
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+#Head{
+    background-image: url("assets/Illustrations/Bathome1.png"); 
+    background-position: center top;
+    background-size: 100% auto;
+}
+#Intro{
+    width: 50%;
+    margin: auto;
+    padding: 10%;
+    text-align: center;
+    padding-bottom: 15%;
+}
+#Home{
+    display: flex;
+    justify-content: space-between;
+    border: 2px #c4c4c4 solid;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 4.5%;
+    padding-bottom: 6%;
+}
+section{
+    border: 2px #c4c4c4 solid;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 4.5%;
+}
+a:visited, a{
+    color: #ffffff;
+}
+
+h1, button, h2, .Rajdhani_font{
+    font-family: Rajdhani, sans-serif;
+}
+h2{
+    font-size: 18px;
+}
+a.Rajdhani_font{
+    font-size: 25px;
+}
+button{
+    border-style: none;
+    padding: 2.5%;
+    color: #ffffff;
+    background: linear-gradient(to right,rgb(237, 222, 191,.4), rgb(137, 0, 8, .6));
+    font-size: 20px;
+}
+button:hover{
+    background: linear-gradient(to right,rgb(237, 222, 191,1), rgb(137, 0, 8, 1))
+}
+button:active{
+    background: linear-gradient(to right,rgb(237, 222, 191,.3), rgb(137, 0, 8, .5))
+}
+#Bt{
+    justify-content:space-evenly
+}
+h1{
+    font-size: 36px;
+}
+article, figcaption, h2{
+    font-family: SpaceGrotesk-Regular, serif;
+}
+.full_width{
+    width: 100%;
+}
+.Personnages_C{
+    display: flex;
+    justify-content: space-around;
+}
+.Personnages{
+    width: 100%;
+}
+#Shuriken{
+    display: inline;
+}
