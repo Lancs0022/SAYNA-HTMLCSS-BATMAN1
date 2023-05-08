@@ -18,7 +18,6 @@
 html{
     background-color: #000000;
     color: #ffffff;
-    
 }
 #Head{
     background-image: url("assets/Illustrations/Bathome1.png"); 
@@ -43,6 +42,16 @@ html{
     padding-left: 5%;
     padding-right: 4.5%;
     padding-bottom: 6%;
+}
+#Nemesis{
+    background-image: url("assets/Illustrations/Bathome13.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 68% 100%;
+    width: fit-content;
+    padding-right: 10%;
+    padding-top: 9%;
+    border: 2px #c4c4c4 solid;
 }
 section{
     border: 2px #c4c4c4 solid;
@@ -95,7 +104,4 @@ article, figcaption, h2{
 }
 .Personnages{
     width: 100%;
-}
-#Shuriken{
-    display: inline;
 }
