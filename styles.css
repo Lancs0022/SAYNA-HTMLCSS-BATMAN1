@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'Rajdhani';
-    src: url(Rajdhani-Medium.ttf);
+    src: url("polices/Rajdhani-Medium.ttf");
 }
 @font-face {
     font-family: 'SpaceGrotesk-Bold';
-    src: url(SpaceGrotesk-Bold.ttf);
+    src: url("polices/SpaceGrotesk-Bold.ttf");
 }
 @font-face {
     font-family: 'SpaceGrotesk-Regular';
-    src: url(SpaceGrotesk-Regular.ttf);
+    src: url("polices/SpaceGrotesk-Regular.ttf");
 }
-@font-face {
+/* @font-face {
     font-family: 'SpaceGrotesk-VariableFont_wght';
     src: url(SpaceGrotesk-VariableFont_wght.ttf);
-}
+} */
 
 html{
     background-color: #000000;
@@ -22,26 +22,53 @@ html{
 #Head{
     background-image: url("assets/Illustrations/Bathome1.png"); 
     background-position: center top;
-    background-size: 100% auto;
+    background-size: 100% 100%;
+    height: max-content;
+    background-repeat: no-repeat;
 }
 #Intro{
     width: 50%;
     margin: auto;
-    padding: 10%;
+    padding: 20%;
     text-align: center;
     padding-bottom: 15%;
 }
 #Home{
     display: flex;
     justify-content: space-between;
-    border: 2px #c4c4c4 solid;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: -6.5%;
+    margin-right: -5.7%;
     margin-top: 0%;
     padding-top: 3%;
     padding-left: 5%;
     padding-right: 4.5%;
     padding-bottom: 6%;
+    border: 3px rgb(196, 196, 196, .4) solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+#Bt{
+    display: flex;
+    justify-content: space-around;
+}
+button, input[type="submit"]{
+    /*
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    */
+    border-style: none;
+    padding: 2.5%;
+    color: #ffffff;
+    background: linear-gradient(to right,rgb(237, 222, 191,.4), rgb(137, 0, 8, .6));
+    font-size: 20px;
+}
+button:hover, input[type="submit"]:hover{
+    background: linear-gradient(to right,rgb(237, 222, 191,1), rgb(137, 0, 8, 1))
+}
+button:active, input[type="submit"]:active{
+    background: linear-gradient(to right,rgb(237, 222, 191,.3), rgb(137, 0, 8, .5))
 }
 #Nemesis{
     background-image: url("assets/Illustrations/Bathome13.png");
@@ -51,14 +78,17 @@ html{
     width: fit-content;
     padding-right: 10%;
     padding-top: 9%;
-    border: 2px #c4c4c4 solid;
+    /* border: 2px #c4c4c4 solid; */
 }
-section{
-    border: 2px #c4c4c4 solid;
+section, footer{
+    border: 3px rgb(196, 196, 196, .4) solid;
+    border-bottom: none;
+    border-top: none;
     margin-left: 5%;
     margin-right: 5%;
     padding-left: 5%;
     padding-right: 4.5%;
+    padding-bottom: 7%;
 }
 a:visited, a{
     color: #ffffff;
@@ -73,35 +103,148 @@ h2{
 a.Rajdhani_font{
     font-size: 25px;
 }
-button{
-    border-style: none;
-    padding: 2.5%;
-    color: #ffffff;
-    background: linear-gradient(to right,rgb(237, 222, 191,.4), rgb(137, 0, 8, .6));
-    font-size: 20px;
-}
-button:hover{
-    background: linear-gradient(to right,rgb(237, 222, 191,1), rgb(137, 0, 8, 1))
-}
-button:active{
-    background: linear-gradient(to right,rgb(237, 222, 191,.3), rgb(137, 0, 8, .5))
-}
-#Bt{
-    justify-content:space-evenly
-}
 h1{
     font-size: 36px;
 }
-article, figcaption, h2{
+article, figcaption, h2, form, footer, blockquote, cite, input[type="submit"]{
     font-family: SpaceGrotesk-Regular, serif;
 }
 .full_width{
     width: 100%;
 }
 .Personnages_C{
+    text-align: center;
     display: flex;
     justify-content: space-around;
 }
 .Personnages{
     width: 100%;
+}
+#Multimedia, #Footer_logo, footer p{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    /* border: 2px #ffffff solid; */
+}
+#Multimedia{
+    margin-bottom: 10%;
+}
+.Default_size{
+    height: max-content;
+    width: max-content;
+}
+#Films_suggestion{
+    align-items: center;
+    width: 70%;
+    height: 5%;
+    display: flex;
+    background: linear-gradient(to right, #A7A7A5, #82898C);
+    border-radius: 15px;
+    justify-content: space-between;
+    border: 1.5px #ffffff solid;
+}
+img[alt="Batman_Begins"]{
+    height: 250px;
+}
+figure[id="Films_suggestion"] figcaption{
+    padding-left: 2.2%;
+    padding-right: 4%;
+}
+/*****************************************     Formulaire     ********************************************/
+form{
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 2.5%;
+    padding-bottom: 4%;
+}
+form, input, select{
+    background: linear-gradient(to bottom right, hsl(40, 56%, 84%, .4), rgb(25, 88, 125, .4));
+}
+fieldset{
+    padding-bottom: 5%;
+}
+#Form_tittles{
+    text-align: center;
+}
+input, select{
+    background: none;
+}
+input[type="text"], input[type="email"], select, input[type="text"]:hover, input[type="email"]:active{
+    width: 100%;
+    border: none;
+    color: #ffffff;
+    border-bottom: 2px solid #c4c4c4;
+}
+/* p.flexible{
+    display: flex;
+    border: 2px #c4c4c4 solid;
+} */
+select{
+    margin-bottom: 4%;
+}
+option{
+    background-color: #173b79;
+}
+input[type="submit"]{
+    font-size: 18px;
+    display: block;
+    width: 35%;
+    margin: auto;
+}
+#Bt_form{
+    display: flex;
+    width: auto;
+    justify-content: space-evenly;
+    margin: 5%;
+    /* border: 2px #c4c4c4 solid; */
+}
+input[type="button"]{
+    color: #ffffff;
+    padding: 1.8%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+fieldset{
+    border: none;
+}
+#Footer_logo, footer p{
+    justify-content: center;
+}
+footer div{
+    display: flex;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+    /* border: 3px rgb(196, 196, 196, .4) solid; */
+    align-items: center;
+}
+img[alt="Guillemets1"]{
+    align-self: start;
+    /* border: 3px rgb(196, 196, 196, .4) solid; */
+}
+img[alt="Guillemets2"]{
+    align-self: flex-end;
+    /* border: 3px rgb(196, 196, 196, .4) solid; */
+}
+footer div div{
+    text-align: center;
+    display: inline;
+}
+#Footer_logo{
+    margin: auto;
+    width: 70%;
+    /* border: 3px rgb(196, 196, 196, .4) solid; */
+}
+#Sayna_X_Dc, #Social_N_ico{
+    display: flex;
+    /* border: 3px rgb(196, 196, 196, .4) solid; */
+}
+#Social_N_ico{
+    width: 25%;
+}
+#Sayna_X_Dc{
+    width: 23%;
+    /* border: 3px rgb(196, 196, 196, .4) solid; */
 }

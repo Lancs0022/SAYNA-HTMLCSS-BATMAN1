@@ -57,7 +57,6 @@
         </div>
     </section>
 
-
     <section>
         <h1 id="Nemesis">NÉMÉSIS</h1>
         <article>
@@ -128,15 +127,95 @@
 
     <section> 
         <h1>MULTIMÉDIA</h1>
-        <nav>
-            <img src="assets\Logos\icon_flèche_1.png" alt="">
-            <figure>
-                <img src="assets\Illustrations\Bathome_ba1.png" alt="">
+        <nav id="Multimedia">
+            <img src="assets\Logos\icon_flèche_1.png" alt="" class="Default_size">
+            <figure id="Films_suggestion">
+                <img src="assets\Illustrations\Bathome_ba1.png" alt="Batman_Begins">
+                <figcaption>
+                    <article>
+                        <h3>ACTION, Adventure</h3>
+                        <h4>Batman Begins</h4>
+                        <h5>IMDB : 8.2</h5>
+                        <p>
+                            Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément
+                            traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de
+                            guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à
+                            Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans
+                            la lutte contre le crime sous le nom de Batman.
+                        </p>
+                    </article>
+                </figcaption>
             </figure>
-            <img src="assets\Logos\icon_flèche_2.png" alt="">
+            <img src="assets\Logos\icon_flèche_2.png" alt="" class="Default_size">
         </nav>
-        <img src="assets\Illustrations\Bathome_ba2.png" alt="">
+        <img src="assets\Illustrations\Bathome_ba2.png" alt="" class="full_width">
     </section>
 
+    <form action="" method="post">
+        <p>
+            <h2 id="Form_tittles">PRENONS CONTACT</h2>
+            <fieldset>
+                <legend>ADRESSE EMAIL</legend>  <br>  <input type="email" name="mail" placeholder="Adresse email">  <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>NEWSLETTER</legend> <br>
+                <p>En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman : <input type="checkbox"></p>
+                <select name="NEWSLETTER" id="choix" aria-placeholder="Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter">
+                    <option value="default" disabled selected hidden>   Choisissez une fréquence à laquelle vous souhaitez recevoir votre newsletter     </option>
+                    <option value="semaine">   Une fois par semaine                                 </option>
+                    <option value="semaine2">  Une fois toutes les deux semaines (2 fois par mois)  </option>
+                    <option value="mois">      Une fois par mois                                    </option>
+                    <option value="mois3">     Une fois tous les trois mois                         </option>
+                    <option value="mois6">     Une fois tous les six mois                           </option>
+                </select>
+                <br>
+                <input type="text" placeholder="Souhaitez-vous recevoir des news"> <br>
+                <div id="Bt_form">
+                    <input type="button" value="Des films">
+                    <input type="button" value="Des comics">
+                    <input type="button" value="De tout">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>MESSAGE</legend>
+                <input type="text" placeholder="Laissez un commentaire pour la communauté"> <br>
+            </fieldset>
+
+            <input type="submit" value="CONFIRMER">
+        </p>
+    </form>
+
+    <footer>
+        <div>
+            <img src="assets\Logos\icon_guillemets_1.png" alt="Guillemets1">
+                <div>
+                    <blockquote>
+                        La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.
+                    </blockquote>
+                    <cite>
+                        The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)
+                    </cite>
+                </div>
+            <img src="assets\Logos\icon_guillemets_2.png" alt="Guillemets2">
+        </div>
+        <p>
+            <img src="assets\Logos\icon_WB.png" alt="Icone Warner Bross">
+            Ce projet respecte l’univers cinématographique des films Batman récents Version Nolan & Snyder & Reeves
+        </p>
+        <figure id="Footer_logo">  
+            <div id="Sayna_X_Dc">
+                <img src="assets\Logos\logo_sayna_white.png" alt="Logo de SAYNA">
+                <img src="assets\Logos\icon_x.png" alt="">
+                <img src="assets\Logos\icon_DC.png" alt="Icone DC">
+            </div>
+            <div id="Social_N_ico">
+                <img src="assets\Logos\icon_facebook.png" alt="Ico Facebook">
+                <img src="assets\Logos\icon_ig.png" alt="Icone Instagram">
+                <img src="assets\Logos\icon_tw.png" alt="Icone Tweeter">
+            </div>
+        </figure>
+    </footer>
 </body>
 </html>
